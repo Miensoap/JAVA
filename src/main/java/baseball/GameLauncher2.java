@@ -1,10 +1,12 @@
 package baseball;
 
 import camp.nextstep.edu.missionutils.Randoms;
+
 import java.util.*;
+
 import static camp.nextstep.edu.missionutils.Console.readLine;
 
-public class GameLauncher {
+public class GameLauncher2 {
     static boolean continueGame = true;
     static void setContinueGameFalse(){
             continueGame = false;
@@ -13,25 +15,21 @@ public class GameLauncher {
     public void run(){
         while (continueGame) {
             playGame();
-            if (reStart())
-                playGame();
+            reStart();
         }
-        System.out.println("게임 종료");
     }
     public void playGame() throws IllegalArgumentException{
         List <Integer> answer = rdAnswer();
         try {
             System.out.println("숫자 야구 게임을 시작합니다.");
-            while (!score(input(),answer)){
-                score(input(),answer);
-            }
+            while (!score(input(), answer));
         }catch (IllegalArgumentException e){
             throw e;
         }
     }
 
     private boolean reStart()throws IllegalArgumentException{
-        System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
+	    System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
         String restart= readLine();
         if(restart.contentEquals("1")){
             setContinueGameTrue();
@@ -42,18 +40,16 @@ public class GameLauncher {
             throw new IllegalArgumentException(
                 "잘못된 값이 입력되었습니다."
             );
-    }
+	}
 }
-
     public static List<Integer> rdAnswer(){
         List<Integer> answer = new ArrayList<>(Arrays.asList(1,3,9));
-//        while (answer.size() < 3) {
-//            int randomNumber = Randoms.pickNumberInRange(1, 9);
-//            if (!answer.contains(randomNumber)) {
-//            answer.add(randomNumber);
-//             }
-//        }
-//        System.out.println(answer);
+        while (answer.size() < 3) {
+            int randomNumber = Randoms.pickNumberInRange(1, 9);
+            if (!answer.contains(randomNumber)) {
+            answer.add(randomNumber);
+             }
+        }
         return answer;
     }
 
@@ -98,9 +94,8 @@ public class GameLauncher {
         int countS = Collections.frequency(scoreCard, 'S');
         int countB = Collections.frequency(scoreCard, 'B');
         if (countS==number.size()){
-//            System.out.println("정답!");
-            setContinueGameFalse();
             System.out.println("정답!");
+            setContinueGameFalse();
             return true;
         }
         else{

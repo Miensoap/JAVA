@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class Application {
     public static void main(String[] args) {
-        GameLauncher baseballgame = new GameLauncher();
+        GameLauncher2 baseballgame = new GameLauncher2();
         baseballgame.run();
     }
 }
