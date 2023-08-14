@@ -1,0 +1,5 @@
+iml : intellij idea module
+    intellij 의 module 구성에 대해 xml 형태로 기술해놓은 파일
+    ->협업시 다른 환경 고려 *.iml git ignore
+
+.idea : option 저장 폴더

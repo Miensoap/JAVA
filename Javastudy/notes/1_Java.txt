@@ -1,0 +1,64 @@
+특징
+   1. 운영체제 독립적이다.
+    ->다양한 기종의 컴퓨터와 운영체제가 공존하는 인터넷 환경에 적합.
+    2. 객체지향언어이다.
+    ->상속 캡슐화 다형성이 적용된 언어
+    3. 비교적 배우기 쉽다.
+    4. 자동 메모리 관리(Garbage Collection)
+    5. 네트워크와 분산처리를 지원한다.
+    6. 멀티쓰레드를 지원한다.
+    7. 동적 로딩을 지원한다.
+
+JVM : java virtual machine
+    자바로 작성된 어플리케이션은 모두 jvm 에서만 실행된다. ->os독립적
+    jvm은 os종속적.
+
+JDK : java development kit
+    bin - javac.exe : 자바 컴파일러
+          java.exe : 자바 인터프리터
+          javap.exe : 역어셈블러
+          javadoc.exe : 자동문서생성기
+          jar.exe : 압축프로그램.
+
+Hello.java 작성 -컴파일-> Hello.class 생성 -실행->"Hello, world"출력
+
+JVM + 클래스라이브러리 = JRE : java runtime environment
+JRE + 개발에 필요한 실행파일 = JDK
+
+모든 코드는 반드시 클래스 안에 존재해야 한다.
+```
+class 'name' {
+    public static void main(String[] args) // main method 선언부 - psvd
+
+}
+```
+하나의 java 어플리케이션에는 main 메서드를 포함한 클래스가 반드시 하나는 있어야한다. (호출 - 수행 - 종료)
+소스파일의 이름은 public class의 이름과 일치해야 한다. public class가 없다면 클래스 중 하나의 이름.
+소스파일(.java)와 달리 class 마다 하나의 class파일이 만들어진다.
+
+자주 발생하는 에러
+    1. cannot find/resolve symbol : 저장된 변수나 메서드를 찾을 수 없다. 선언되지 않은 것을 사용.
+    2. ';' expected : 자바의 모든 문장 끝에는 ;을 붙여주어야 한다.
+    3. Excepton in thread "main"java.lang.NoClassDefFoundError: main : main 메서드가 존재하지 않는다.
+        args는 매개변수의 이름이므로 arg, argv 등 사용가능
+    4. Excepton in thread "main"java.lang.NoClassDefFoundError: Hello : Hello 라는 클래스를 찾을 수 없다.
+        Hello.java가 컴파일되어 Hello.class파일이 생성되어야한다. or classpath 설정 확인
+    5. illegal start of expression : 문법오류.
+    6. class,interface, or enum expected : 보통 괄호의 개수가 일치하지 않는 경우.
+
+2-5장 : 문법
+6-9장 :
+10-17장 : 응용. 11,12,15.
+
+권장하는 규칙
+    1. 클래스 이름의 첫글자는 항상 대문자로 한다.
+        -변수와 메서드의 이름의 첫 글자는 항상 소문자로 한다.
+    2. 여러 단어로 이루어진 이름은 단어의 첫 글자를 대문자로 한다.
+    3. 상수의 이름은 모두 대문자로 한다. 여러 단어로 이루어진 경우 '_'로 구분한다.
+
+
+ch3 연산자 operator
+    literal 간의 연산은 컴파일러가 미리 수행. 실행시에 x
+
+
+
