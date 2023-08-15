@@ -1,4 +1,4 @@
-package Modern;
+package Modern.Part1;
 
 public class Apple {
     String Color;

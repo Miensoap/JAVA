@@ -1,4 +1,5 @@
-package Modern;
+package Modern.Part1;
+
 import java.util.*;
 
 public class Modern_1<T>{

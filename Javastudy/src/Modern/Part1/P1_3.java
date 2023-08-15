@@ -1,4 +1,4 @@
-package Modern;
+package Modern.Part1;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-public class Modern_3<T>{
-    public Modern_3() throws IOException {
+public class P1_3<T>{
+    public P1_3() throws IOException {
     }
 
     public String processFile(BufferedReaderProcessor p) throws IOException{

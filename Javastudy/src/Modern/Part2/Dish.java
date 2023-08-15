@@ -1,4 +1,4 @@
-package Modern;
+package Modern.Part2;
 
 import javax.print.attribute.standard.MediaSize;
 import java.lang.reflect.Type;

@@ -1,4 +1,4 @@
-package Modern;
+package Modern.Part2;
 
 import java.util.*;
 import static java.util.Comparator.comparing;
@@ -6,7 +6,7 @@ import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toList;
 
 // Ch4. Stream
-public class Mordern_4_Stream {
+public class P2_1 {
 
 
     public static void main(String[] args) {

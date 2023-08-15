@@ -1,7 +1,8 @@
-package Modern;
+package Modern.Part1;
+
 import java.util.*;
 
-public class Modern_2 {
+public class P1_2_1 {
     public  void main(String[] args) {
 
         Apple apple1 = new Apple("GREEN", 200);
@@ -16,7 +17,7 @@ public class Modern_2 {
 
     }
     // 7. List 형식으로 추상화
-        public  static <T> List<T> newfilter (List < T > list, FruitPredicate <T>  p){
+        public  static <T> List<T> newfilter (List < T > list, FruitPredicate<T> p){
             List<T> result = new ArrayList<>();
             for (T e : list) {
                 if (p.test(e)) {
