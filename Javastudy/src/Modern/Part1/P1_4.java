@@ -1,14 +1,19 @@
 package Modern.Part1;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
-
-import static Modern.Part1.Modern_1.*;
 import static java.util.Comparator.comparing;
-
 public class P1_4 {
     public static void main(String[] args) {
+
+        Apple apple1 = new Apple("GREEN", 200);
+        Apple apple2 = new Apple("RED", 120);
+        List<Apple> inventory1 = new ArrayList<>(Arrays.asList(apple1, apple2));
+
         // Comparator 조합
         Comparator<Apple> c = comparing(Apple::getWeight);
         inventory1.sort(comparing(Apple::getWeight)

@@ -2,7 +2,7 @@ package Modern.Part1;
 
 import java.util.*;
 
-public class Modern_1<T>{
+public class P1_1<T>{
     static Apple apple1 = new Apple("GREEN", 200);
     static Apple apple2 = new Apple("RED" , 120);
     static List <Apple> inventory1 = new ArrayList<>(Arrays.asList(apple1,apple2));
