@@ -1,4 +1,4 @@
-package BackJ.P11720;
+package BackJ.P11720_숫자합;
 
 import java.util.Scanner;
 

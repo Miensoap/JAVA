@@ -1,4 +1,4 @@
-package BackJ.P14500;
+package BackJ.P14500_테트로미노;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

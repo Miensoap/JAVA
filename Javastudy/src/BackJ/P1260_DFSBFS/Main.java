@@ -1,4 +1,4 @@
-package BackJ.P1260;
+package BackJ.P1260_DFSBFS;
 
 import java.util.*;
 

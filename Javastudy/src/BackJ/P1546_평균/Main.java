@@ -1,4 +1,4 @@
-package BackJ.P1546;
+package BackJ.P1546_평균;
 
 import java.util.*;
 

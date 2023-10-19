@@ -1,4 +1,4 @@
-package BackJ.P16235;
+package BackJ.P16235_나무;
 
 import java.io.BufferedReader;
 import java.io.IOException;

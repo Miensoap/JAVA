@@ -1,4 +1,4 @@
-package BackJ.P14003;
+package BackJ.P14003_부분수열;
 
 import java.io.BufferedReader;
 import java.io.IOException;
