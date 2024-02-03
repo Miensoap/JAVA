@@ -1,4 +1,4 @@
-package CodeTree.Ch2.Xrun;
+package CodeTree.Ch2.X달리기;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
