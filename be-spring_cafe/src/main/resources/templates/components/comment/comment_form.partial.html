@@ -1,0 +1,39 @@
+<form class="submit-write" action="/api/comment" method="post">
+    <input type="hidden" name="articleId" value="{{article.id}}">
+    <div class="form-group" style="padding:14px;">
+        <textarea class="form-control" name="content" placeholder="Update your status"></textarea>
+    </div>
+    <button class="btn btn-success pull-right" type="submit">답변하기
+    </button>
+    <div class="clearfix"/>
+</form>
+
+<div id="comment_template" style="display: none">
+<article class="article">
+    <div class="article-header">
+        <div class="article-header-thumb">
+            <img src="https://graph.facebook.com/v2.3/1324855987/picture"
+                 class="article-simpleUserInfo-thumb" alt="">
+        </div>
+        <div class="article-header-text">
+            <a href="/user/{authorId}" class="article-simpleUserInfo-name">{author}</a>
+            <a href="#" class="article-header-time" title="퍼머링크">
+                {formedTime}
+            </a>
+        </div>
+    </div>
+    <div class="article-doc comment-doc">
+        <p id="comment-content">{content}</p>
+    </div>
+    <div class="article-util">
+        <ul class="article-util-list">
+            <li>
+                <a class="link-modify-article" href="/comment/{id}/form">수정</a>
+            </li>
+            <li>
+                <a id="delete-answer-form" class="link-modify-article" href="/api/comment/{id}">삭제</a>
+            </li>
+        </ul>
+    </div>
+</article>
+</div>
